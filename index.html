@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Vault</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <header>
+      <h1><i class="fa-solid fa-vault"></i> Voice Vault</h1>
+      <p>আপনার ভয়েস নিরাপদ ও সহজে রেকর্ড করুন</p>
+    </header>
+
+    <!-- Recorder Controls -->
+    <section class="recorder-card">
+      <div class="status-indicator" id="status">রেকর্ড করতে নিচের বাটনে চাপুন</div>
+      
+      <div class="controls">
+        <button id="recordBtn" class="btn btn-record">
+          <i class="fa-solid fa-microphone"></i>
+        </button>
+        <button id="stopBtn" class="btn btn-stop" disabled>
+          <i class="fa-solid fa-square"></i>
+        </button>
+      </div>
+
+      <div class="timer" id="timer">00:00</div>
+    </section>
+
+    <!-- Saved Recordings List -->
+    <section class="vault-section">
+      <h2><i class="fa-solid fa-folder-closed"></i> সেভ করা রেকর্ডসমূহ</h2>
+      <ul id="recordingsList" class="recordings-list">
+        <!-- Recorded items will appear here -->
+      </ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
